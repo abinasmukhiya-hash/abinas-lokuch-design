@@ -1,0 +1,148 @@
+
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abinas Lokuch - Logo & Design Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            width: 120px;
+            height: auto;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .description {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .contact-form {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150x50?text=Abinas+Lokuch+Logo" alt="Abinas Lokuch Logo">
+        <nav>
+            <a href="#description">बारेमा</a>
+            <a href="#contact">सम्पर्क</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="description" id="description">
+            <h2>Abinas Lokuch - Logo & Design Services</h2>
+            <p>
+                म Abinas Lokuch, Nepal बाट professional logo design, website design, mobile र computer को service प्रदान गर्दछु। म कुनै पनि प्रकारको technology problem solve गर्न सक्षम छु। मेरो उद्देश्य ग्राहकलाई उच्च गुणस्तरीय सेवा दिनु हो। 
+                तपाईँ आफ्नो project को लागि मलाई सिधा सम्पर्क गर्न सक्नुहुन्छ।
+            </p>
+            <p>
+                <strong>Payment:</strong> eSewa: 9812461314, Khalti: 9812461314
+            </p>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <h2>सम्पर्क फारम</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="तपाईँको नाम" required>
+                <input type="email" name="email" placeholder="तपाईँको ईमेल" required>
+                <textarea name="message" rows="5" placeholder="सन्देश लेख्नुहोस्" required></textarea>
+                <button type="submit">पठाउनुहोस्</button>
+            </form>
+            <p id="responseMessage" style="color:green;"></p>
+        </section>
+
+        <section class="social-links">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com/abinaslokuch/" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/@L_abinas" target="_blank">YouTube</a>
+            <a href="mailto:abinaslokuch@gmail.com">Gmail</a>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Abinas Lokuch. सबै अधिकार सुरक्षित।
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = e.target.name.value;
+            const email = e.target.email.value;
+            const message = e.target.message.value;
+
+            // यहाँ तपाईँले email service वा backend integrate गर्न सक्नुहुन्छ
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            document.getElementById('responseMessage').textContent = "तपाईँको सन्देश सफलतापूर्वक पठाइयो!";
+            e.target.reset();
+        });
+    </script>
+
+</body>
+</html>
