@@ -1,5 +1,5 @@
 
-<html lang="ne">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,8 +87,8 @@
     <header>
         <img src="https://via.placeholder.com/150x50?text=Abinas+Lokuch+Logo" alt="Abinas Lokuch Logo">
         <nav>
-            <a href="#description">बारेमा</a>
-            <a href="#contact">सम्पर्क</a>
+            <a href="#description">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -96,8 +96,7 @@
         <section class="description" id="description">
             <h2>Abinas Lokuch - Logo & Design Services</h2>
             <p>
-                म Abinas Lokuch, Nepal बाट professional logo design, website design, mobile र computer को service प्रदान गर्दछु। म कुनै पनि प्रकारको technology problem solve गर्न सक्षम छु। मेरो उद्देश्य ग्राहकलाई उच्च गुणस्तरीय सेवा दिनु हो। 
-                तपाईँ आफ्नो project को लागि मलाई सिधा सम्पर्क गर्न सक्नुहुन्छ।
+                I am Abinas Lokuch from Nepal, providing professional logo design, website design, mobile and computer services. I can solve any technology-related problem and aim to deliver high-quality services. Contact me directly to discuss your project.
             </p>
             <p>
                 <strong>Payment:</strong> eSewa: 9812461314, Khalti: 9812461314
@@ -105,12 +104,12 @@
         </section>
 
         <section class="contact-form" id="contact">
-            <h2>सम्पर्क फारम</h2>
+            <h2>Contact Form</h2>
             <form id="contactForm">
-                <input type="text" name="name" placeholder="तपाईँको नाम" required>
-                <input type="email" name="email" placeholder="तपाईँको ईमेल" required>
-                <textarea name="message" rows="5" placeholder="सन्देश लेख्नुहोस्" required></textarea>
-                <button type="submit">पठाउनुहोस्</button>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Write your message here" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
             <p id="responseMessage" style="color:green;"></p>
         </section>
@@ -124,7 +123,7 @@
     </div>
 
     <footer>
-        &copy; 2025 Abinas Lokuch. सबै अधिकार सुरक्षित।
+        &copy; 2025 Abinas Lokuch. All rights reserved.
     </footer>
 
     <script>
@@ -134,12 +133,12 @@
             const email = e.target.email.value;
             const message = e.target.message.value;
 
-            // यहाँ तपाईँले email service वा backend integrate गर्न सक्नुहुन्छ
+            // Here you can integrate email service or backend
             console.log('Name:', name);
             console.log('Email:', email);
             console.log('Message:', message);
 
-            document.getElementById('responseMessage').textContent = "तपाईँको सन्देश सफलतापूर्वक पठाइयो!";
+            document.getElementById('responseMessage').textContent = "Your message has been sent successfully!";
             e.target.reset();
         });
     </script>
